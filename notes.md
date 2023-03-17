@@ -91,3 +91,8 @@ criamos um novo scrip para que o servidor rode dessa maneira apenas no desenvolv
 "dev": "nodemon ./src/server.js"
 
 com isso para eu roda o servidor agora no terminal digito : npm run dev
+
+======================================
+Os Navegadores só aceitam GET.
+para testar os outros métodos precisamos utilizar outras ferramentas.
+vamos usar o Insomnia.
