@@ -52,4 +52,26 @@ Para cada Request, precisa haver um parametro definido no código.
 
 fazemos isso pelo /: 
 
+=====================================
+
+    QUERY PARAMS
+outra estratégia para enviar e receber valores da API.
+
+ROTA => https:// enderecoservidor.com.br/users?page=2
+
+
+? => é o simbolo para o QUERY.
+PAGE => é o nome do QUERY
+= => atribui um valor para o Query. neste exemplo PAGE tem o VALOR 2.
+
+Para passasr mais de um QUERY usamos o simbolo & e então segue a mesma estrutura NOME do QUERY e VALOR.
+
+EX: https:// enderecoservidor.com.br/users?page=2&limit=10
+
+DIFERENÇA ENTRE QUERY E ROUTE PARAMS 
+Os endereços dos parametros não precisam estar especificados no código.
+
+No ROUTE PARAMS a rota precisa conter todos os paramentros que estão no código.
+
+Na QUERY PARAMS, isso é flexivel/ opcional !
 
