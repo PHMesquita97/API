@@ -75,3 +75,19 @@ No ROUTE PARAMS a rota precisa conter todos os paramentros que estão no código
 
 Na QUERY PARAMS, isso é flexivel/ opcional !
 
+=====================================
+Como reiniciar o servidor automaticamente, a cada alteração no código.
+
+Istalar o nodemon
+
+npm install nodemon --sav-dev
+
+o --save-dev é justamente o que salva o desenvolvimento do código.
+
+======================================
+EM PACKAGE.JSON 
+criamos um novo scrip para que o servidor rode dessa maneira apenas no desenvolvimento.
+
+"dev": "nodemon ./src/server.js"
+
+com isso para eu roda o servidor agora no terminal digito : npm run dev
