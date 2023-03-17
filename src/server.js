@@ -3,8 +3,12 @@ const express = require("express");
 //Inicializar o Express
 const app = express();
 
-app.get("/message/:id", (request, response) => {
-    response.send(`Id da mensagem: ${request.params.id}`)
+// para cada Request, precisa ter um parametro. Feito pelo /:
+app.get("/message/:id/:user", (request, response) => {
+    response.send(`
+        Id da mensagem: ${request.params.id}.
+        Para o usuário: ${request.params.user}    
+    `);
 })
 //definir a porta que a api vai observar.
 const PORT = 3000;

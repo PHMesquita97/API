@@ -43,6 +43,13 @@ recuperar a informação nesse caso se refere a pegar a informação na barra de
 
 Então se na barra eu coloco '5' ele responde '5', se eu coloco '32' ele responde '32'.
 
+
+IMPORTANTE:
+AS INFORMAÇÔES SÃO ENVIADAS PARA A API ATRAVES DA ROTA! (ROTA=>URL)
 ===========================
+
+Para cada Request, precisa haver um parametro definido no código.
+
+fazemos isso pelo /: 
 
 
