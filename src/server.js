@@ -4,10 +4,13 @@ const express = require("express");
 const app = express();
 
 // para cada Request, precisa ter um parametro. Feito pelo /:
+//para evitar a repticção de Código podemos desestruturar o request.params.
 app.get("/message/:id/:user", (request, response) => {
+    const {id, user} = request.params
+
     response.send(`
-        Id da mensagem: ${request.params.id}.
-        Para o usuário: ${request.params.user}    
+        Id da mensagem: ${id}.
+        Para o usuário: ${user}    
     `);
 })
 //definir a porta que a api vai observar.
