@@ -103,3 +103,16 @@ cadastro de usuário, produto, etc.
 
 Routes=> rotas do projeto. 
 Controllers=> parte responsavel por processar as requisições da aplicação. É a camada que EXECUTA o que o usuário pede.
+
+
+=========CONTROLLERS=========
+//PADRÃO DE BOA PRATICA: Cada controller não pode ter mais que 5 métodos.
+    /*
+        * index - GEt para listar vários registros.
+        * show -  GET exibir um registro especifico.
+        * create - POST para criar um registro.
+        * update - PUT para atualizar um registro.
+        * delete - DELETE para remover um registro.
+    */
+
+    // Se for preciso criar mais do 5, siginifica que vale a pena criar outro controlador.

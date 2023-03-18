@@ -1,15 +1,11 @@
 //Class permite dentro dela criar e acessar VÁRIAS funções.
 class UsersController {
-    //PADRÃO DE BOA PRATICA: Cada controller não pode ter mais que 5 métodos.
-    /*
-        * index - GEt para listar vários registros.
-        * show -  GET exibir um registro especifico.
-        * create - POST para criar um registro.
-        * update - PUT para atualizar um registro.
-        * delete - DELETE para remover um registro.
-    */
+    //Tirei do users.routers, então preciso fazer com que ela seja chamada lá.
+    create(request, response) {
+        const { name, email, password } = request.body;
 
-    // Se for preciso criar mais do 5, siginifica que vale a pena criar outro controlador.
+        response.json({name, email, password});
+    }
 }
 
 module.exports = UsersController;

@@ -1,11 +1,11 @@
 const {Router} = require("express");
-//as duas Const são para que a modularização funcione. P/ que os arquivos em pastas diferentes se comuniquem.
+//importar!
+const UsersController = require("../controllers/UsersController");
+
 const usersRoutes = Router();
 
-usersRoutes.post("/", (request, response) => {
-    const { name, email, password } = request.body;
+const usersController = new UsersController();
 
-    response.json({name, email, password})
-});
+usersRoutes.post("/", usersController.create);
 
 module.exports = usersRoutes;
