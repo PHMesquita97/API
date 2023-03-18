@@ -100,3 +100,6 @@ vamos usar o Insomnia.
 MÉTODO POST
 Geralmente usado para CADASTRAR informações.
 cadastro de usuário, produto, etc.
+
+Routes=> rotas do projeto. 
+Controllers=> parte responsavel por processar as requisições da aplicação. É a camada que EXECUTA o que o usuário pede.
