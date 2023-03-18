@@ -96,3 +96,7 @@ com isso para eu roda o servidor agora no terminal digito : npm run dev
 Os Navegadores só aceitam GET.
 para testar os outros métodos precisamos utilizar outras ferramentas.
 vamos usar o Insomnia.
+======================================
+MÉTODO POST
+Geralmente usado para CADASTRAR informações.
+cadastro de usuário, produto, etc.
