@@ -64,7 +64,7 @@ ROTA => https:// enderecoservidor.com.br/users?page=2
 PAGE => é o nome do QUERY
 = => atribui um valor para o Query. neste exemplo PAGE tem o VALOR 2.
 
-Para passasr mais de um QUERY usamos o simbolo & e então segue a mesma estrutura NOME do QUERY e VALOR.
+Para passar mais de um QUERY usamos o simbolo & e então segue a mesma estrutura NOME do QUERY e VALOR.
 
 EX: https:// enderecoservidor.com.br/users?page=2&limit=10
 
@@ -116,3 +116,21 @@ Controllers=> parte responsavel por processar as requisições da aplicação. �
     */
 
     // Se for preciso criar mais do 5, siginifica que vale a pena criar outro controlador.
+
+=========Middleware=========
+
+Ex: temos um site com varias funçoes, uma delas é cadastrar novos produtos.
+Quando alguem clicar em cadastrar um novo produto: site ====> Request ====== back-end===> newProduct()
+
+o Middleware é como se fosse uma inspeção de segurança.
+
+Middleware são funções que tem acsso ao objeto de solicitação (requisição), o objetivo de Resposta (resposta), e a proxima função de middleware no ciclo "solicitação-resposta" do app.
+
+A próxima função middleware é comumente denotada por uma variável chamada Next.
+
+Middleware consegue extrair: request, response e next.
+next é a proxima função para a app prosseguir.
+
+dá pra passar o Middleware para cada uma das rotas separadamente, ou para todas de uma vez só.
+
+
